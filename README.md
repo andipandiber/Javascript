@@ -34,4 +34,25 @@ Tambien permite Visualizar el Error en la DOM.
 
 ## VALIDACION DE IMAGENES
 
+Validacion de las Imagenes para los botones se deshabiliten cuando lleguen a los limites de 10 y 0
+
+![captura7](https://user-images.githubusercontent.com/24640851/69186988-a595c300-0ae7-11ea-8bfa-5614ddaac23b.png)
+
+Se realiza un Bucle para que verifique cuando el contador llega a 10 y empieza en 0
+
+## Mostrar Imagenes
+Se crea un elemento para validar la ubicacion de las posiciones de las imagenes 
+![captura7 (1)](https://user-images.githubusercontent.com/24640851/69187166-10df9500-0ae8-11ea-9ecf-59bb40c0df63.png)
+
+Funcion para crear un contador que permita recorrer el bucle de las imagenes
+
+![captura8](https://user-images.githubusercontent.com/24640851/69187269-44baba80-0ae8-11ea-90da-ee506050057c.png)
+
+Funcion que permita generar numeros aleatorios entre los valores de 1 a 10 con la funcion Math.Round que permite redondear y la Funcion Math.Random
+
+![captura6](https://user-images.githubusercontent.com/24640851/69186086-dbd24300-0ae5-11ea-9b9b-9c85fdf04788.png)
+
+![captura5](https://user-images.githubusercontent.com/24640851/69186084-dbd24300-0ae5-11ea-9f47-595fa89dca8b.png)
+
+
 
