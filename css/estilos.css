@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    background-color: #f4f7f7;
+    color: #1f4e5f;
+}
+
+label{
+    padding: 3px;
+    margin: 3px;
+}
+
+input{
+    margin: 3px;
+    padding: 3px;
+}
+
+#enviar{
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    align-items: center;
+}
+
+#cancelar{
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    align-items: center;
+}
