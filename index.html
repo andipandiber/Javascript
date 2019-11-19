@@ -9,27 +9,41 @@
 <body onload="mostrar()">
     <h1>Galeria de Fotos</h1>
     <form action="formulario2">
-        <img id="foto" alt="imagen">
+        <img id="foto" alt="imagen"> <br>
         <input type="button" id="anterior" value="Anterior" onclick="atras()">
         <input type="button" id="iniciar" value="iniciar" onclick="mostrar()">
         <input type="button" id="siguiente" value="Siguiente" onclick="adelante()">
     </form>
     <h1>Hoja de Validacion</h1>
-    <form id="formulario2" >
+    <form id="formulario2" method="POST" action="pagina.php" onsubmit="return validarCamposObligatorios()">
         <label for="cedula">Cedula:</label>
-            <input type="text" id="cedula" name="cedula" value=""><br>
+            <input type="text" id="cedula" name="cedula" value="" onkeypress="return validaCedula(event)">
+            <span id="mensajeCedula" class="error"></span>
+            <br>
         <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" value=""><br>
+            <input type="text" id="nombre" name="nombre" value="" onkeypress="return validaLetras(event)">
+            <span id="mensajeNombre" class="error"></span>
+            <br>
         <label for="apellido">Apellidos:</label>
-            <input type="text" id="apellido" name="apellido" value=""><br>
+            <input type="text" id="apellido" name="apellido" value="" onkeypress="return validaLetras(event)">
+            <span id="mensajeApellido" class="error"></span>
+            <br>
         <label for="telefono">Telefono:</label>
-            <input type="text" id="telefono" name="telefono" value=""><br>
+            <input type="text" id="telefono" name="telefono" value="" onkeypress="return validaTelefono(event)">
+            <span id="mensajeTelefono" class="error"></span>
+            <br>
         <label for="fecha">Fecha:</label>
-            <input type="text" id="fecha" name="fecha" value=""><br>
+            <input type="text" id="fecha" name="fecha" value="" placeholder="DD/MM/YYYY" onblur="return validarFecha(this)">
+            <span id="mensajeFecha" class="error"></span>
+            <br>
         <label for="correo">Correo:</label>
-            <input type="text" id="correo" name="correo" value=""><br>
+            <input type="text" id="correo" name="correo" value="" oninput="return validaCorreo(this)">
+            <span id="mensajeCorreo" class="error"></span>
+            <br>
         <label for="contra">Contrasena:</label>
-            <input type="text" id="contra" name="conta" value=""><br>
+            <input type="text" id="contra" name="conta" value="" onkeypress="return validaContra(event)">
+            <span id="mensajeContra" class="error"></span>
+            <br>
         <input type="submit" id="enviar" value="Enviar">
         <input type="submit" id="cancelar" value="Cancelar">
     </form>
