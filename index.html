@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/valida.js"></script>
+    <script type="text/javascript" src="js/valida.js"></script>
     <title>Validacion de la Pagina</title>
 </head>
-<body>
+<body onload="mostrar()">
     <h1>Galeria de Fotos</h1>
-    <ul class="Galeria">
-        <li>
-            <a href="#img"><img src="images/image.png" alt=""></a>
-        </li>
-        <li>
-            <a href="#img1"><img src="images/image1.jpg" alt=""></a>
-        </li>
-        <li>
-            <a href="#img2"><img src="images/image2.jpg" alt=""></a>
-        </li>
-    </ul>
+    <form action="formulario2">
+        <img id="foto" alt="imagen">
+        <input type="button" id="anterior" value="Anterior" onclick="atras()">
+        <input type="button" id="iniciar" value="iniciar" onclick="mostrar()">
+        <input type="button" id="siguiente" value="Siguiente" onclick="adelante()">
+    </form>
     <h1>Hoja de Validacion</h1>
-    <form id="formulario1" >
+    <form id="formulario2" >
         <label for="cedula">Cedula:</label>
             <input type="text" id="cedula" name="cedula" value=""><br>
         <label for="nombre">Nombre:</label>

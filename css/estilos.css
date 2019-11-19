@@ -6,6 +6,10 @@
     color: #1f4e5f;
 }
 
+img{
+    width: 50%;
+    height: 50%;
+}
 label{
     padding: 3px;
     margin: 3px;
@@ -29,3 +33,25 @@ input{
     font-size: 20px;
     align-items: center;
 }
+
+#anterior{
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    align-items: center;
+}
+
+#siguiente{
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    align-items: center;
+}
+
+#iniciar{
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    align-items: center;
+}
+
