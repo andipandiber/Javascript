@@ -8,6 +8,7 @@
 </head>
 <body onload="mostrar()">
     <h1>Galeria de Fotos</h1>
+    <br>
     <form action="formulario2">
         <img id="foto" alt="imagen"> <br>
         <input type="button" id="anterior" value="Anterior" onclick="atras()">
@@ -15,6 +16,7 @@
         <input type="button" id="siguiente" value="Siguiente" onclick="adelante()">
     </form>
     <h1>Hoja de Validacion</h1>
+    <br>
     <form id="formulario2" method="POST" action="pagina.php" onsubmit="return validarCamposObligatorios()">
         <label for="cedula">Cedula:</label>
             <input type="text" id="cedula" name="cedula" value="" onkeypress="return validaCedula(event)">
@@ -41,11 +43,11 @@
             <span id="mensajeCorreo" class="error"></span>
             <br>
         <label for="contra">Contrasena:</label>
-            <input type="text" id="contra" name="conta" value="" onkeypress="return validaContra(event)">
+            <input type="password" id="contra" name="conta" value="" onkeypress="return validaContra(event)">
             <span id="mensajeContra" class="error"></span>
             <br>
         <input type="submit" id="enviar" value="Enviar">
-        <input type="submit" id="cancelar" value="Cancelar">
+        <input type="reset" id="cancelar" value="Cancelar">
     </form>
 </body>
 </html>
